@@ -1,10 +1,8 @@
-#include "SDL.h"
+#include <SDL.h>
 
-namespace set
-{
-	class Screen
-	{
+namespace set {
 
+	class Screen {
 	public:
 		const static int SCREEN_WIDTH = 800;
 		const static int SCREEN_HEIGHT = 600;
@@ -18,10 +16,10 @@ namespace set
 	public:
 		Screen();
 		bool init();
+		void update();
+		void setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue);
 		bool processEvents();
 		void close();
 	};
-}
 
-
-
+} 

@@ -1,30 +1,38 @@
 #include <iostream>
-#include "Screen.h"
 #include <SDL.h>
+#include <math.h>
+#include "Screen.h"
 #undef main
+using namespace std;
+using namespace set;
 
-// using namespace set;
+int main() {
 
-int main()
-{
+	Screen screen;
 
-	set::Screen screen;
-	if (screen.init() == false)
-	{
-		std::cout << "Error initalising SDL " << std::endl;
+	if (screen.init() == false) {
+		cout << "Error initialising SDL." << endl;
 	}
-	
-	while(true)
-	{
-		// Update particles
-		// Draw particles
-		// Check for messages/events
 
-		if (screen.processEvents() == false)
-		{
+	while (true) {
+		// Update particles
+
+		// Draw particles
+		for (int y = 0; y < Screen::SCREEN_HEIGHT; y++) {
+			for (int x = 0; x < Screen::SCREEN_WIDTH; x++) {
+				screen.setPixel(x, y, 128, 0, 255);
+			}
+		}
+
+		screen.setPixel(400, 300, 255, 255, 255);
+
+		// Draw the screen
+		screen.update();
+
+		// Check for messages/events
+		if (screen.processEvents() == false) {
 			break;
 		}
-		
 	}
 
 	screen.close();
