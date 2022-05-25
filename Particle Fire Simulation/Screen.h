@@ -1,8 +1,13 @@
+#ifndef SCREEN_H_
+#define SCREEN_H_
+
 #include <SDL.h>
 
-namespace set {
+namespace set 
+{
 
-	class Screen {
+	class Screen 
+	{
 	public:
 		const static int SCREEN_WIDTH = 800;
 		const static int SCREEN_HEIGHT = 600;
@@ -20,6 +25,9 @@ namespace set {
 		void setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue);
 		bool processEvents();
 		void close();
+		void clear();
 	};
 
 } 
+
+#endif
