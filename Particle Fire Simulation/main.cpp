@@ -32,6 +32,7 @@ int main()
 		
 		swarm.update(elapsed);
 
+		// Set RBG values
 		unsigned char green = (unsigned char)((1 + sin(elapsed * 0.0001)) * 128);
 		unsigned char red = (unsigned char)((1 + sin(elapsed * 0.0002)) * 128);
 		unsigned char blue = (unsigned char)((1 + sin(elapsed * 0.0003)) * 128);
