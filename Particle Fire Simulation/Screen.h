@@ -2,7 +2,7 @@
 #define SCREEN_H_
 
 #include <SDL.h>
-
+// Screen Dimentions and Parameters
 namespace set 
 {
 
