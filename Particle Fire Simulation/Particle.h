@@ -1,6 +1,6 @@
 #ifndef PARTICLE_H_
 #define PARTICLE_H_
-
+// Particle header file 
 namespace set {
 
 	struct Particle {
