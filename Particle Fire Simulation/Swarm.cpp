@@ -13,7 +13,7 @@ namespace set
 	{
 		delete[] m_pParticles;
 	}
-
+	// Change settings here to simulate more particles
 	void Swarm::update(int elapsed) 
 	{
 		int interval = elapsed - lastTime;
