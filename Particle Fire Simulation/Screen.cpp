@@ -48,7 +48,7 @@ namespace set
 
 		return true;
 	}
-
+	// Adds a blurring effect
 	void Screen::boxBlur() {
 		// Swap the buffers, so pixel is in m_buffer2 and we are drawing to m_buffer1.
 		Uint32* temp = m_buffer1;
