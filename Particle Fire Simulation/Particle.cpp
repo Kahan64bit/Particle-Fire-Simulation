@@ -28,6 +28,7 @@ namespace set
 		// TODO Auto-generated destructor stub
 	}
 
+	// Change parameters here to get different effects
 	void Particle::update(int interval) 
 	{
 		m_direction += interval * 0.0002;
