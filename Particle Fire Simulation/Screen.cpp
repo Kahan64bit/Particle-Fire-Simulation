@@ -1,6 +1,6 @@
 #include "Screen.h"
 #include <iostream>
-
+// Creates the Graphical Window
 namespace set 
 {
 
