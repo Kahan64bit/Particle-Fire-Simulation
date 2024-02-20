@@ -2,7 +2,7 @@
 #define SWARM_H_
 
 #include "Particle.h"
-
+// Number of particles generated 
 namespace set 
 {
 
